@@ -477,5 +477,67 @@
       </div>
     </footer>
     <!--#endregion footer-->
+    <div class="modal-layout">
+      <div class="modal-form">
+        <form action="" class="call-back-form">
+          <button type="button" class="close-button">
+            <svg width="8" height="8" class="icon-close">
+                    <use href="./images/icons.svg#icon-close" />
+                  </svg>
+          </button>
+          <p class="form-header">
+            Leave your contacts and we will call you back
+          </p>
+          <label class="form-label"
+            >Name
+            <div class="input-wraper">
+             <input type="text" class="user-name" name="name" required/>
+            <svg width="18" height="24" class="input-icon">
+                      <use href="./images/icons.svg#icon-person" />
+                    </svg>
+            </div>
+          </label>
+          <label class="form-label"
+            >Phone
+            <div class="input-wraper">
+            <input type="tel" class="user-tel" name="phone-number" required/>
+              <svg width="18" height="24" class="input-icon">
+                      <use href="./images/icons.svg#icon-phone" />
+                    </svg>    
+          </div>
+          </label>
+          <label class="form-label"
+            >Email
+            <div class="input-wraper">
+            <input type="email" class="user-mail" name="email" required/>
+            <svg width="18" height="24" class="input-icon">
+                      <use href="./images/icons.svg#icon-email" />
+                    </svg>
+          </div>
+          </label>
+          <label class="form-label"
+            >Comment
+            <textarea
+              name="text-area"
+              class="form-tarea"
+              placeholder="Text input"
+              resize: none
+            ></textarea>
+          </label>
+          <div class="policy">
+  <input name="checkbox" id="user-privacy" class="sr-only"/>
+  <label for="user-privacy" class="policy-label">
+    <span class="acept-icon">
+      <svg width="10" height="8" class="svg-icon">
+        <use href="./images/icons.svg#icon-check-mark" />
+      </svg>
+    </span>
+    <span class="policy-text">I accept the terms and conditions of the <a href="#" class="policy-link">Privacy Policy</a></span>
+  </label>
+</div>
+          <button class="form-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
