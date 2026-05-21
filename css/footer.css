@@ -96,22 +96,30 @@
   align-items: center;
   gap: 24px;
 }
-input.user-mail {
+input::placeholder {
+  color: #ffffff;
+}
+input.user-mail-sbscrb {
   padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 16px;
-  height: 40px;
+  max-height: 40px;
   width: 264px;
   outline: none;
   border: 1px solid #ffffff;
-  background-color: #2e2f42;
+  border-radius: 4px;
+  background-color: transparent;
   color: #ffffff;
-  transition-property: border;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 input.user-mail:focus {
-  border: 1px solid #31d0aa;
+  border-color: #31d0aa;
 }
 .subscribe-btn {
   display: flex;
@@ -130,7 +138,8 @@ input.user-mail:focus {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.subscribe-btn:hover {
+.subscribe-btn:hover,
+.subscribe-btn:focus {
   background-color: #31d0aa;
 }
 .subscribe-svg {

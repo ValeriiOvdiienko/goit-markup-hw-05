@@ -481,7 +481,7 @@
               type="email"
               name="user-mail"
               placeholder="E-mail"
-              class="user-mail"
+              class="user-mail-sbscrb"
             />
             <button type="submit" class="subscribe-btn">
               Subscribe
@@ -494,17 +494,16 @@
       </div>
     </footer>
     <!--#endregion footer-->
-    <div id="modal" class="modal-layout">
+    <div id="modal" class="modal-layout is-open">
       <div class="modal-form">
+        <p class="form-header">Leave your contacts and we will call you back</p>
         <form class="call-back-form">
           <button type="button" class="close-button">
             <svg width="8" height="8" class="icon-close">
               <use href="./images/icons.svg#icon-close" />
             </svg>
           </button>
-          <p class="form-header">
-            Leave your contacts and we will call you back
-          </p>
+
           <label class="form-label"
             >Name
             <span class="input-wraper">
@@ -540,15 +539,20 @@
               placeholder="Text input"
             ></textarea>
           </label>
-          <div class="policy">
-            <input name="checkbox" id="user-privacy" class="sr-only" />
-            <label for="user-privacy" class="policy-label">
-              <span class="acept-icon">
-                <svg width="10" height="8" class="svg-icon">
+          <div class="policy-checkbox">
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="policy-checkbox"
+              class="native-checkbox sr-only"
+            />
+            <label for="policy-checkbox" class="checkbox-wraper">
+              <span class="custome-checkbox">
+                <svg width="10" height="10" class="checked-icon">
                   <use href="./images/icons.svg#icon-check-mark" />
                 </svg>
               </span>
-              <span class="policy-text"
+              <span class="custome-checkbox-text"
                 >I accept the terms and conditions of the
                 <a href="#" class="policy-link">Privacy Policy</a></span
               >
