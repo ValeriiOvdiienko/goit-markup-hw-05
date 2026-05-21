@@ -226,6 +226,7 @@ input:focus-within + .input-icon {
   letter-spacing: 0.04em;
   background-color: #4d5ae5;
   color: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition-property: background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -233,5 +234,4 @@ input:focus-within + .input-icon {
 .form-button:hover,
 .form-button:focus {
   background-color: #404bbf;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
