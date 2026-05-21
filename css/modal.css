@@ -138,6 +138,9 @@ input:focus-within + .input-icon {
   border-radius: 4px;
   outline: none;
   resize: none;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -185,12 +188,15 @@ input:focus-within + .input-icon {
   margin-right: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  fill: transparent;
-  transition-property: background-color, border-color, fill;
+  transition-property: background-color, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checked-icon {
+  fill: transparent;
+  transition: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .custome-checkbox-text {
   font-weight: 400;
@@ -203,7 +209,7 @@ input:focus-within + .input-icon {
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.04em;
-  line-height: 1.33333;
+  line-height: 1.16667;
   text-decoration: underline;
   color: #4d5ae5;
 }
@@ -216,13 +222,16 @@ input:focus-within + .input-icon {
   padding-right: 65px;
   margin-bottom: 0;
   border-radius: 4px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
   background-color: #4d5ae5;
   color: #ffffff;
-  transition-property: background-color;
+  transition-property: background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-button:hover,
 .form-button:focus {
   background-color: #404bbf;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }

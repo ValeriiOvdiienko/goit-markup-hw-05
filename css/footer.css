@@ -103,7 +103,7 @@ input.user-mail-sbscrb {
   padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 16px;
-  max-height: 40px;
+  height: 40px;
   width: 264px;
   outline: none;
   border: 1px solid #ffffff;
@@ -112,13 +112,13 @@ input.user-mail-sbscrb {
   color: #ffffff;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 2;
   letter-spacing: 0.04em;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-input.user-mail:focus {
+input.user-mail-sbscrb:focus {
   border-color: #31d0aa;
 }
 .subscribe-btn {
